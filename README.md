@@ -2,14 +2,19 @@
 
 A Proxy server for Audioshield that replaces Soundcloud support with Play Music support. This is based off the concept of Audioshield-Tubifier by reddit user -olli-.
 
+
 (This has been fixed and confirmed working by Jackalopalen on Dec 31, 2017)
+=======
+**IMPORTANT: This project is no longer compatible with current releases of Audioshield because the game has removed SoundCloud support. It still works by rolling back to the older release (see installation instructions). If someone can think of a way to implement this in the latest version please let me know.**
+
 
 ## Setting up Account
 
-Your google account is under the restrictions of the [Node.js unofficial Play Music API](https://github.com/jamon/playmusic) I used.
+Your Google account is under the restrictions of the [Node.js unofficial Play Music API](https://github.com/jamon/playmusic) I used.
 
 >The library requires Google credentials. It also requires a mobile device registered against that account. Ensure you have signed into the app on a phone and that you have played any amount of music. This will authorise the device that the library will masquerade as.
 
+The following is not required if 2-factor authorization is used
 >The Google account also needs to have the "Allow less secure apps" setting set to "ON". You can change it [here](https://myaccount.google.com/security#connectedapps).
 
 ## Installation Instructions
@@ -19,6 +24,7 @@ Your google account is under the restrictions of the [Node.js unofficial Play Mu
 3. Open up config.ini and make sure the correct path is set for Steam.exe.
 4. Right click on Audioshield in your Steam library and click Properties. In the Betas tab, select `before_videoshield` from the dropdown list then click close button at the bottom of the window. Then wait for Steam to patch to the old version.
 5. Run Audioshield-PlayMusic.exe. You will be prompted for your username and app password. You can [generate an app password here](https://security.google.com/settings/security/apppasswords).
+
 
 ## Launch Instructions
 
@@ -37,7 +43,7 @@ By default, the search will search all tracks on play music, but you can start a
 
 * **Search by Album**: `-al <search>`. This will output the tracks of matching albums.
 * **Search by Playlist**: `-pl <search>`. This will output all tracks in the matching playlists.
-* **Search Thumbed Up Tracks**: `-fav <search>`. This returns all matching thumbed up tracks. The search is optional, you can exclude it to get all thumbed up tracks.
+* **Search Thumbed Up Tracks**: `-fav <search>`. This returns all matching thumbed up tracks. The search is optional; you can exclude it to get all thumbed up tracks.
 * **Search Library**: `-lib <search>`. This will return matching tracks in your library.
 * **Search Uploaded**: `-up <search>`. This will return matching tracks you've uploaded.
 * **Search SoundCloud**: `-sc <search>`. This will fallback to the original SoundCloud Search.
