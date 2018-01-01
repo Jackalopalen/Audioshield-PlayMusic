@@ -2,6 +2,8 @@
 
 A Proxy server for Audioshield that replaces Soundcloud support with Play Music support. This is based off the concept of Audioshield-Tubifier by reddit user -olli-.
 
+(This has been fixed and confirmed working by Jackalopalen on Dec 31, 2017)
+
 ## Setting up Account
 
 Your google account is under the restrictions of the [Node.js unofficial Play Music API](https://github.com/jamon/playmusic) I used.
@@ -13,9 +15,10 @@ Your google account is under the restrictions of the [Node.js unofficial Play Mu
 ## Installation Instructions
 
 1. Audioshield-PlayMusic is based on Node.js. To install Node.js (v6.0 or above), visit https://nodejs.org/en/.
-2. [Download a zip of this project](https://github.com/kufii/Audioshield-PlayMusic/archive/master.zip) and extract it anywhere.
+2. [Download a zip of this project](https://github.com/Jackalopalen/Audioshield-PlayMusic/archive/master.zip) and extract it anywhere.
 3. Open up config.ini and make sure the correct path is set for Steam.exe.
-4. Run Audioshield-PlayMusic.exe. You will be prompted for your username and app password. You can [generate an app password here](https://support.google.com/accounts/answer/185833?hl=en).
+4. Right click on Audioshield in your Steam library and click Properties. In the Betas tab, select `before_videoshield` from the dropdown list then click close button at the bottom of the window. Then wait for Steam to patch to the old version.
+5. Run Audioshield-PlayMusic.exe. You will be prompted for your username and app password. You can [generate an app password here](https://security.google.com/settings/security/apppasswords).
 
 ## Launch Instructions
 
